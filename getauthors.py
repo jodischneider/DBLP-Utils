@@ -1,5 +1,6 @@
 import urllib
 import codecs
+from BeautifulSoup import BeautifulSoup
 
 authors = []
 
@@ -16,7 +17,7 @@ for li in allli:
      #print a
      author = a.text
      if author:
-       authors.append(author)
+       authors.append(author+"\r")
 
 outfile = codecs.open("authors.txt", "w", "utf-8")
 for author in authors:
