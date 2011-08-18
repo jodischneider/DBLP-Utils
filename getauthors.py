@@ -40,7 +40,7 @@ def scrape(authors):
 		   #convert HTML entities
 		   #via StackOverflow http://stackoverflow.com/questions/701704/how-do-you-convert-html-entities-to-unicode-and-vice-versa-in-python
 		   
-		   #@@TODO: what's the difference between BeautifulStoneSoup and BeautifulSoup?
+		   #BeautifulStoneSoup is for XML; BeautifulSoup is for HTML @@TODO Test using BeautifulSoup here
 	
 		   author = unicode(BeautifulStoneSoup(author, convertEntities=BeautifulStoneSoup.HTML_ENTITIES))
 		   authors.append(author)
